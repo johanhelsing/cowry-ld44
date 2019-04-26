@@ -55,3 +55,8 @@ sysinfo.txt
 # Crashlytics generated file
 crashlytics-build.properties
 
+#unity-build build folder
+bin/
+
+#vscode settings
+.vscode/
