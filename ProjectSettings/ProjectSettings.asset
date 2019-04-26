@@ -118,7 +118,7 @@ PlayerSettings:
     16:10: 1
     16:9: 1
     Others: 1
-  bundleVersion: 1.0.1576.2163
+  bundleVersion: 1.0.1576.2372
   preloadedAssets: []
   metroInputSource: 0
   wsaTransparentSwapchain: 0
@@ -159,7 +159,7 @@ PlayerSettings:
   androidSupportedAspectRatio: 1
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
-    Standalone: com.Company.ProductName
+    Standalone: 
     WebGL: 
   buildNumber: {}
   AndroidBundleVersionCode: 1
@@ -515,7 +515,8 @@ PlayerSettings:
   webGLThreadsSupport: 0
   webGLWasmStreaming: 0
   scriptingDefineSymbols:
-    13: BUILD_TYPE_RELEASE;BUILD_PLATFORM_WEBGL;BUILD_ARCH_WEBGL
+    1: BUILD_TYPE_RELEASE;BUILD_PLATFORM_OSX;BUILD_ARCH_OSX
+    13: 
   platformArchitecture: {}
   scriptingBackend: {}
   il2cppCompilerConfiguration: {}

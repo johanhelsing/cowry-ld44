@@ -1,5 +1,33 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-7058484699190435257
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97d88f7d353534a4fbdeb11196057db7, type: 3}
+  m_Name: UploadItch
+  m_EditorClassIdentifier: 
+  actionType: 1
+  actionName: UploadItch
+  note: 
+  actionEnabled: 1
+  filter:
+    condition: 2
+    clauses:
+    - type: 1
+      comparison: 2
+      test: WEBGL
+  pathToButlerExe: C:\Users\johan\dev\butler\butler.exe
+  nameOfItchUser: jhelsing
+  nameOfItchGame: ld44
+  useGeneratedBuildVersion: 0
+  showUploadProgress: 0
+  itchChannelOverride: 
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17,8 +45,8 @@ MonoBehaviour:
     buildPath: $YEAR-$MONTH-$DAY/$BUILD/$RELEASE_TYPE/$PLATFORM/$ARCHITECTURE/$DISTRIBUTION
     openFolderPostBuild: 1
   _productParameters:
-    buildCounter: 0
-    lastGeneratedVersion: 
+    buildCounter: 9
+    lastGeneratedVersion: 1.0.1576.2347
     version: 1.0.$DAYSSINCE("January 1, 2015").$SECONDS
     autoGenerate: 1
   _releaseTypeList:
@@ -168,8 +196,38 @@ MonoBehaviour:
     showBuildInfo: 0
     hideDisabled: 0
     treeView: 0
-    selectedKeyChain: 
+    selectedKeyChain: Release/WebGL/WebGL
   _preBuildActions:
     buildActions: []
   _postBuildActions:
-    buildActions: []
+    buildActions:
+    - {fileID: 473244197820643601}
+    - {fileID: -7058484699190435257}
+--- !u!114 &473244197820643601
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97d88f7d353534a4fbdeb11196057db7, type: 3}
+  m_Name: UploadItch
+  m_EditorClassIdentifier: 
+  actionType: 1
+  actionName: UploadItch
+  note: 
+  actionEnabled: 1
+  filter:
+    condition: 2
+    clauses:
+    - type: 1
+      comparison: 0
+      test: WEBGL
+  pathToButlerExe: C:\Users\johan\dev\butler\butler.exe
+  nameOfItchUser: jhelsing
+  nameOfItchGame: ld44
+  useGeneratedBuildVersion: 0
+  showUploadProgress: 0
+  itchChannelOverride: web
