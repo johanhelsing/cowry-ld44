@@ -12,7 +12,7 @@ PlayerSettings:
   targetDevice: 2
   useOnDemandResources: 0
   accelerometerFrequency: 60
-  companyName: 
+  companyName: DefaultCompany
   productName: LudumDare44
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
@@ -519,7 +519,7 @@ PlayerSettings:
   webGLWasmStreaming: 0
   scriptingDefineSymbols:
     1: 
-    13: BUILD_TYPE_RELEASE;BUILD_PLATFORM_WEBGL;BUILD_ARCH_WEBGL
+    13: 
   platformArchitecture: {}
   scriptingBackend: {}
   il2cppCompilerConfiguration: {}
