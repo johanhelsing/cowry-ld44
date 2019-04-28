@@ -19,15 +19,14 @@ public class FadeInTextMeshPro : MonoBehaviour {
         if (useInitialValueAsTarget) {
             targetAlpha = tmp.alpha;
         }
-        if (!startAtZero) {
-            startAlpha = tmp.alpha;
-        } else {
+        if (startAtZero) {
             tmp.alpha = 0;
+        } else {
+            startAlpha = tmp.alpha;
         }
     }
 
     public void StartFadeIn() {
-        Debug.Log("should start to fade in ");
         StartCoroutine(FadeIn());
     }
 

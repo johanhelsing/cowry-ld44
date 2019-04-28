@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 140030325}
   - component: {fileID: 3861660996109875044}
   - component: {fileID: 7759914486823230144}
+  - component: {fileID: 8966307494887035115}
   m_Layer: 0
   m_Name: CowryShell
   m_TagString: Untagged
@@ -126,7 +127,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   direction: 0
-  maxTorque: 1
+  maxTorque: 1.5
   clockwise: 1
 --- !u!114 &3861660996109875044
 MonoBehaviour:
@@ -156,6 +157,21 @@ MonoBehaviour:
   mergesInto: {fileID: 5000031072635545035, guid: f0004e35f8d78464b88cbcc25a6f3add,
     type: 3}
   radius: 1
+  rb: {fileID: 0}
+--- !u!114 &8966307494887035115
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4671761932202134099}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 680e36071a30d8343b86d7ef7e50b1d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  direction: 0
+  maxForce: 0.5
 --- !u!1001 &4671761931568401961
 PrefabInstance:
   m_ObjectHideFlags: 0

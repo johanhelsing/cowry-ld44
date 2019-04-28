@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Controllable : MonoBehaviour {
     private TorqueController torque;
+    private ForceController forceController;
     private Mergeable mergeable;
     private Splitable splitable;
 
@@ -11,10 +12,12 @@ public class Controllable : MonoBehaviour {
         torque = GetComponent<TorqueController>();
         mergeable = GetComponent<Mergeable>();
         splitable = GetComponent<Splitable>();
+        forceController = GetComponent<ForceController>();
     }
 
     public void MoveHorizontally(float direction) {
         torque?.MoveHorizontally(direction);
+        forceController?.MoveHorizontally(direction);
     }
 
     public void Merge() {
