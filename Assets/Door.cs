@@ -5,17 +5,21 @@ using UnityEngine;
 public class Door : MonoBehaviour {
     public bool open = false;
     public float force = 15;
-    public Rigidbody2D rb;
+    Rigidbody2D rb;
+    AudioSource audioSource;
 
     void Start() {
         rb = GetComponentInChildren<Rigidbody2D>();
+        audioSource = GetComponentInChildren<AudioSource>();
     }
 
     public void Open() {
         open = true;
+        audioSource?.Play();
     }
     public void Close() {
         open = false;
+        audioSource?.Stop();
     }
 
     void FixedUpdate() {

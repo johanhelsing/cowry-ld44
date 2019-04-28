@@ -8,10 +8,12 @@ public class Splitable : MonoBehaviour {
     public GameObject part;
     public void Split() {
         var rb = GetComponentInParent<Rigidbody2D>();
-        Vector3 direction = rb.velocity.normalized;
+        // Vector3 direction = rb.velocity.normalized;
+        Vector3 direction = Vector3.right; // hard code direction for now
         var offset = direction * 0.5f;
         var pos = transform.position;
-        var first = SpawnPart(pos + offset, rb.velocity);
+        var extraVelocity = rb.velocity.normalized * 1f;
+        var first = SpawnPart(pos + offset, rb.velocity + extraVelocity);
         var second = SpawnPart(pos, rb.velocity);
         Splitted?.Invoke(first, second);
         Destroy(this.gameObject);

@@ -3,16 +3,18 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Controllable : MonoBehaviour {
-    private TorqueController torque;
-    private ForceController forceController;
-    private Mergeable mergeable;
-    private Splitable splitable;
+    TorqueController torque;
+    ForceController forceController;
+    Mergeable mergeable;
+    Splitable splitable;
+    NugdeController nudgeController;
 
     void Start() {
         torque = GetComponent<TorqueController>();
         mergeable = GetComponent<Mergeable>();
         splitable = GetComponent<Splitable>();
         forceController = GetComponent<ForceController>();
+        nudgeController = GetComponent<NugdeController>();
     }
 
     public void MoveHorizontally(float direction) {
@@ -26,5 +28,9 @@ public class Controllable : MonoBehaviour {
 
     public void Split() {
         splitable?.Split();
+    }
+
+    public void SpecialAction() {
+        nudgeController?.Nudge();
     }
 }

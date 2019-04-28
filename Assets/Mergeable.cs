@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Mergeable : MonoBehaviour {
     public event Action<GameObject> MergedInto;
@@ -11,6 +12,7 @@ public class Mergeable : MonoBehaviour {
     public GameObject mergesInto;
     public float radius = 1f;
     public Rigidbody2D rb;
+    public UnityEvent WasMergedWithPlayer;
 
     void Start() {
         rb = GetComponent<Rigidbody2D>();
@@ -30,13 +32,13 @@ public class Mergeable : MonoBehaviour {
     }
 
     private void MergeWith(Mergeable other) {
-        Debug.Log("Trying to merge with " + other);
         var newPosition = (transform.position + other.transform.position) / 2;
         var newRotation = Quaternion.Lerp(transform.rotation, other.transform.rotation, 0.5f);
         var newVelocity = (rb.velocity + other.rb.velocity) / 2;
         var merged = Instantiate(mergesInto, newPosition, newRotation);
         merged.GetComponent<Rigidbody2D>().velocity = newVelocity;
         MergedInto?.Invoke(merged);
+        other.WasMergedWithPlayer?.Invoke();
         Destroy(this.gameObject);
         Destroy(other.gameObject);
     }

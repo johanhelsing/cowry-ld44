@@ -24,7 +24,7 @@ MonoBehaviour:
       test: WEBGL
   pathToButlerExe: C:\Users\johan\dev\butler\butler.exe
   nameOfItchUser: jhelsing
-  nameOfItchGame: ld44
+  nameOfItchGame: cowry-ld44
   useGeneratedBuildVersion: 0
   showUploadProgress: 0
   itchChannelOverride: 
@@ -45,8 +45,8 @@ MonoBehaviour:
     buildPath: $YEAR-$MONTH-$DAY/$BUILD/$RELEASE_TYPE/$PLATFORM/$ARCHITECTURE/$DISTRIBUTION
     openFolderPostBuild: 1
   _productParameters:
-    buildCounter: 9
-    lastGeneratedVersion: 1.0.1576.2347
+    buildCounter: 11
+    lastGeneratedVersion: 1.0.1578.5481
     version: 1.0.$DAYSSINCE("January 1, 2015").$SECONDS
     autoGenerate: 1
   _releaseTypeList:
@@ -61,7 +61,7 @@ MonoBehaviour:
       customDefines: 
       sceneList:
         enabledScenes:
-        - fileGUID: 2cda990e2423bbf4892e6590ba056729
+        - fileGUID: 278bd6337b2b89244b4159e7338e5b3b
   _platformList:
     platforms:
     - enabled: 1
@@ -196,7 +196,7 @@ MonoBehaviour:
     showBuildInfo: 0
     hideDisabled: 0
     treeView: 0
-    selectedKeyChain: Release/WebGL/WebGL
+    selectedKeyChain: Release/PC/Windows x64
   _preBuildActions:
     buildActions: []
   _postBuildActions:
@@ -227,7 +227,7 @@ MonoBehaviour:
       test: WEBGL
   pathToButlerExe: C:\Users\johan\dev\butler\butler.exe
   nameOfItchUser: jhelsing
-  nameOfItchGame: ld44
+  nameOfItchGame: cowry-ld44
   useGeneratedBuildVersion: 0
   showUploadProgress: 0
   itchChannelOverride: web

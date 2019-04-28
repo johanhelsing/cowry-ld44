@@ -399,7 +399,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   direction: 0
-  maxTorque: 1
+  maxTorque: 1.5
   clockwise: 1
 --- !u!114 &-1450081327177324689
 MonoBehaviour:
