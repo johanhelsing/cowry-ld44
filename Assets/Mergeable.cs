@@ -7,7 +7,7 @@ using UnityEngine.Events;
 
 public class Mergeable : MonoBehaviour {
     public event Action<GameObject> MergedInto;
-    public enum Currency { Cowry, Coin };
+    public enum Currency { Cowry, Coin, CowryLarge };
     public Currency currency;
     public GameObject mergesInto;
     public float radius = 1f;

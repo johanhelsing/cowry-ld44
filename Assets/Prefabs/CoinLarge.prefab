@@ -7,12 +7,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: -1450081327177324689, guid: f0004e35f8d78464b88cbcc25a6f3add,
-        type: 3}
-      propertyPath: part
-      value: 
-      objectReference: {fileID: 5000031072635545035, guid: f0004e35f8d78464b88cbcc25a6f3add,
-        type: 3}
     - target: {fileID: 5000031072635545035, guid: f0004e35f8d78464b88cbcc25a6f3add,
         type: 3}
       propertyPath: m_Name
@@ -95,6 +89,20 @@ PrefabInstance:
     - target: {fileID: 8483612046412636, guid: f0004e35f8d78464b88cbcc25a6f3add, type: 3}
       propertyPath: maxTorque
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: -1450081327177324689, guid: f0004e35f8d78464b88cbcc25a6f3add,
+        type: 3}
+      propertyPath: part
+      value: 
+      objectReference: {fileID: 5000031072635545035, guid: f0004e35f8d78464b88cbcc25a6f3add,
+        type: 3}
+    - target: {fileID: 1570891155, guid: f0004e35f8d78464b88cbcc25a6f3add, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.151
+      objectReference: {fileID: 0}
+    - target: {fileID: 1570891154, guid: f0004e35f8d78464b88cbcc25a6f3add, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6209335796361091579, guid: f0004e35f8d78464b88cbcc25a6f3add, type: 3}

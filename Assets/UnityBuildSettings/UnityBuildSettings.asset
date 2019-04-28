@@ -45,16 +45,16 @@ MonoBehaviour:
     buildPath: $YEAR-$MONTH-$DAY/$BUILD/$RELEASE_TYPE/$PLATFORM/$ARCHITECTURE/$DISTRIBUTION
     openFolderPostBuild: 1
   _productParameters:
-    buildCounter: 11
-    lastGeneratedVersion: 1.0.1578.5481
+    buildCounter: 12
+    lastGeneratedVersion: 1.0.1579.78
     version: 1.0.$DAYSSINCE("January 1, 2015").$SECONDS
     autoGenerate: 1
   _releaseTypeList:
     releaseTypes:
     - typeName: Release
       bundleIndentifier: 
-      companyName: 
-      productName: LudumDare44
+      companyName: Johan Helsing
+      productName: Cowry
       developmentBuild: 0
       allowDebugging: 0
       enableHeadlessMode: 0
